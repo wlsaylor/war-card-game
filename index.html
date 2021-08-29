@@ -5,10 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>War!</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <div class="button-container">
+        <button class="button" id="startbutton" onclick="war.start();">Start the War!</button>
+    </div>
+    <div class="player-container">
+        <div class="row">
+            <div class="column" id="player-one-container">
+                <h1 id="one" class="player">Player One</h1>
+                <ul class="player-one-score"></ul>
+                <h2 id="player-one-total-score">Score: 0</h2>
+            </div>
+            <div class="column" id="score">
+                <h1 class="score-title">Battlefield</h1>
+                <ul class="score-list"></ul>
+                <h2 id="winner"></h2>
+            </div>
+            <div class="column" id="player-two-container">
+                <h1 id="two" class="player">Player Two</h1>
+                <ul class="player-two-score"></ul>
+                <h2 id="player-two-total-score">Score: 0</h2>
+            </div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 
