@@ -121,6 +121,7 @@ class Game {
             await this.timer(600);
         }
 
+        //Checks for final winner.
         if (playerOne.score > playerTwo.score) {
             winner.innerHTML = `${playerOne.name} Wins!!!`;
         } else if (playerOne.score < playerTwo.score) {
@@ -129,6 +130,7 @@ class Game {
             winner.innerHTML = `Its a Draw!!! Nobody wins in war.`;
         }
 
+        //Updates start button to reload button
         document.querySelector('#startbutton').setAttribute('onclick', 'location.reload();');
         document.querySelector('#startbutton').disabled = false;
         document.querySelector('#startbutton').innerHTML = 'Play Again?';
