@@ -80,10 +80,6 @@ class Game {
         gameDeck.shuffle();
         gameDeck.deal(this.players[0], this.players[1]);
 
-        console.dir(gameDeck);
-        console.dir(this.players[0].hand);
-        console.dir(this.players[1].hand);
-
         this.playCards(this.players[0], this.players[1]);
     }
 
@@ -111,7 +107,6 @@ class Game {
             } else if (playerOneCard.value < playerTwoCard.value) {
                 this.printScore(`${playerTwo.name} wins!`, compareScoresUl);
                 playerTwo.score++;
-                console.log(playerTwo.score);
             } else if (playerOneCard.value === playerTwoCard.value) {
                 this.printScore(`Its a draw! No points awarded.`, compareScoresUl);
             }
